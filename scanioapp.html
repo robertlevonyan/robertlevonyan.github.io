@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scanio — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f1f4f8;
+    --surface: #ffffff;
+    --text: #12202e;
+    --muted: #4a5a6b;
+    --line: #d8e0e8;
+    --accent: #2d4c81;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12202e;
+      --surface: #1a2938;
+      --text: #f1f4f8;
+      --muted: #a8b6c4;
+      --line: #2c3e50;
+      --accent: #7fa5e0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 4px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 40px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 24px 0 8px;
+  }
+  p, li {
+    font-size: 0.97rem;
+  }
+  ul {
+    padding-left: 1.2em;
+  }
+  li + li {
+    margin-top: 6px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  a {
+    color: var(--accent);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    color: var(--muted);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .note {
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Privacy Policy for Scanio</h1>
+    <div class="meta">Last updated: August 11, 2026</div>
+  </header>
+
+  <p>
+    Scanio ("the app") is an offline data-collection terminal for retail staff: scanning
+    products, counting stock, checking shelf prices, and managing the documents that come out
+    of that work. It is built and maintained by <strong>inn</strong> and <strong>itbox</strong>
+    ("we", "us"). This policy explains what information the app handles, where it goes, and
+    what it does not do.
+  </p>
+
+  <div class="card">
+    <strong>In short:</strong> Scanio runs on the device it's installed on. Sign-in accounts and
+    everything you scan or count stay on that device unless the business running the terminal
+    deliberately configures an export destination in Settings — and even then, data goes to a
+    server or folder <em>that business</em> chooses and controls, not to us. We don't run
+    analytics, advertising, or crash-tracking in this app, and we don't sell or share your data.
+  </div>
+
+  <h2>Who this policy is for</h2>
+  <p>
+    Scanio is a business tool: it's installed on a shared device by a retail business for its
+    staff to use during a shift, not distributed as a consumer app. If you're an employee using
+    a terminal that runs Scanio, the business that gave you access to it is the one that manages
+    your account and decides how long your data is kept — we describe below what the app itself
+    does with information, and who to contact for what.
+  </p>
+
+  <h2>Information the app handles</h2>
+
+  <h3>Account information</h3>
+  <p>
+    To sign in, the app stores a username, display name, role (admin, manager, or user), and
+    password on the device's local database. This lets staff sign in without a network
+    connection. This information is <strong>not transmitted</strong> to us or to any third party
+    — it stays on the device and is used only to control sign-in and what each role is allowed
+    to do inside the app.
+  </p>
+
+  <h3>Scanning and inventory data</h3>
+  <p>
+    Product codes, barcodes, quantities, prices, and the documents built from them exist on the
+    device for the length of a collection session. This data is not sent anywhere by the app on
+    its own.
+  </p>
+
+  <h3>Activity log</h3>
+  <p>
+    The app keeps a short-lived log of actions taken inside it — who signed in, who changed a
+    role, who completed a document — so a business can audit what happened on a shared terminal.
+    This log lives on the device.
+  </p>
+
+  <h3>Data your organization chooses to export</h3>
+  <p>
+    Settings lets an administrator configure where completed documents get exported: a local
+    folder on the device, or a wireless connection (FTP, SMB, or a back-office API) with its own
+    address and credentials. If configured, exported files — the same product and quantity data
+    described above — are sent to that destination. <strong>That destination is chosen and
+    operated by the business running the terminal, not by us</strong>; we do not receive a copy.
+  </p>
+
+  <h3>Device permissions</h3>
+  <table>
+    <tr><th>Permission</th><th>What it's for</th></tr>
+    <tr>
+      <td>Internet &amp; network state</td>
+      <td>Only used for the export connection described above, when an administrator configures
+        one. The app does not otherwise contact the internet — no analytics, no ads, no update
+        checks.</td>
+    </tr>
+    <tr>
+      <td>Vibrate</td>
+      <td>Haptic feedback when a scan is accepted, rejected, or a document is completed.</td>
+    </tr>
+  </table>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not use the device camera or take photos — scanning is handled by a connected
+      hardware barcode scanner, not image capture.</li>
+    <li>It does not access device location.</li>
+    <li>It does not access contacts, messages, or other apps' data.</li>
+    <li>It does not include analytics, advertising, or crash-reporting software.</li>
+    <li>It does not sell personal information or share it with third parties for their own
+      marketing purposes.</li>
+  </ul>
+
+  <h2>Data storage and retention</h2>
+  <p>
+    Accounts, scan data, and the activity log are stored locally on the device for as long as
+    the app is installed, until an administrator removes or disables an account, or until the
+    app's storage is cleared. Data sent to an export destination is retained according to that
+    destination's own systems and policies, which the business running the terminal controls.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    Scanio is a workplace tool for retail staff and is not directed at children. We do not
+    knowingly collect information from children.
+  </p>
+
+  <h2>Your choices</h2>
+  <p>
+    Because accounts on a Scanio terminal are created and managed by the business that operates
+    it, requests to view, correct, or delete an account's data should go to that business's
+    administrator first — they can edit or disable the account directly in the app's Users
+    screen. For questions about how the app itself works, contact us using the details below.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, we'll update the date at the top of this page. Continued use of the
+    app after a change means you accept the updated policy.
+  </p>
+
+  <h2>Contact us</h2>
+  <p>
+    Questions about this policy or the app can be sent to
+    <a href="mailto:info@itbox.am">info@itbox.am</a>.
+  </p>
+  <p class="note">
+    inn — <a href="https://robertlevonyan.github.io/" target="_blank" rel="noopener">robertlevonyan.github.io</a><br>
+    itbox — <a href="https://itbox.am/" target="_blank" rel="noopener">itbox.am</a>
+  </p>
+
+  <footer>
+    © inn and itbox. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,732 +1,344 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
-
+<html lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
-    <title>Robert Levonyan</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
+    <title>Robert Levonyan — Android &amp; Multiplatform Developer</title>
+    <meta name="description" content="Robert Levonyan is a Senior Android and multiplatform developer based in Yerevan, Armenia. Apps, open source, talks and writing.">
+    <meta name="author" content="Robert Levonyan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0e0f">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Robert Levonyan — Android &amp; Multiplatform Developer">
+    <meta property="og:description" content="Senior Android and multiplatform developer based in Yerevan, Armenia.">
+    <meta property="og:url" content="https://robertlevonyan.com/">
+    <meta property="og:image" content="https://robertlevonyan.com/images/about-photo.jpg">
 
-    <!-- favicons
-    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+    <link rel="stylesheet" href="css/site.css">
+    <script>
+        (function () {
+            var d = document.documentElement, t = "dark";
+            try { t = localStorage.getItem("theme") || "dark"; } catch (e) {}
+            d.setAttribute("data-theme", t === "light" ? "light" : "dark");
+            d.classList.add("js");
+        })();
+    </script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-
 </head>
 
 <body id="top">
 
+    <!-- ===== Hero ===== -->
+    <section class="section section-hero">
+        <header class="nav">
+            <div class="container container-nav">
+                <a href="#top" class="nav-brand" aria-label="Robert Levonyan — home">Robert.</a>
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-        </div>
-    </div>
-
-
-    <!-- # page wrap
-    ================================================== -->
-    <div class="s-pagewrap">
-
-        <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Robert.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">Robert.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Portfolio</a></li>
-                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
-        <main class="s-content">
-
-
-            <!-- ### intro
-            ================================================== -->
-            <section id="intro" class="s-intro target-section">
-
-                <div class="row intro-content wide">
-
-                    <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
-
-                        <h1 class="text-huge-title">
-                            I am Robert,<br>
-                            an Android and multiplatform<br>
-                            developer based<br>
-                            in Yerevan, Armenia.
-                        </h1>
+                <nav class="nav-menu" id="nav-menu" aria-label="Main">
+                    <div class="nav-menu-links">
+                        <a href="#work" class="nav-link">Work</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </div>
+                    <a href="https://drive.google.com/open?id=142lXrGCILpX3a_YI8Xa8GMttNpjm3hfv&amp;usp=drive_fs" target="_blank" rel="noopener" class="button button-dark">Download my CV</a>
+                </nav>
 
-                    <ul class="intro-social">
-                        <li><a href="https://github.com/robertlevonyan" target="_blank">Github</a></li>
-                        <li><a href="https://x.com/robertlevonyan" target="_blank">X</a></li>
-                        <li><a href="https://www.instagram.com/robert_levonyan/" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/in/robert-levonyan-0226a462/" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z"/></svg>
+                    </button>
+                    <button class="nav-menu-button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                        <span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
 
-                </div> <!-- end intro content -->
+        <div class="container hero-main">
+            <div class="hero-content">
+                <h1 class="hero-heading-lines">
+                    <span class="reveal-line"><span class="display-2xl">I'm Robert —</span></span>
+                    <span class="reveal-line"><span class="display-2xl">an Android &amp;</span></span>
+                    <span class="reveal-line"><span class="display-2xl">multiplatform</span></span>
+                    <span class="reveal-line"><span class="display-2xl display-light">developer.</span></span>
+                </h1>
+            </div>
+        </div>
 
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                        fill-rule="evenodd" clip-rule="evenodd">
-                        <path
-                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                    </svg>
+        <div class="container container-hero-bottom">
+            <div class="grid">
+                <p class="body-l hero-intro fade-up">Based in Yerevan, Armenia. Building modern,<br class="hide-s"> fast and well-crafted apps for 10+ years.</p>
+                <ul class="hero-social fade-up" aria-label="Social profiles">
+                    <li><a href="https://github.com/robertlevonyan" target="_blank" rel="noopener" class="nav-link">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/robert-levonyan-0226a462/" target="_blank" rel="noopener" class="nav-link">LinkedIn</a></li>
+                    <li><a href="https://x.com/robertlevonyan" target="_blank" rel="noopener" class="nav-link">X</a></li>
+                    <li><a href="https://www.instagram.com/robert_levonyan/" target="_blank" rel="noopener" class="nav-link">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section class="section section-below-hero" id="work">
+        <div class="container">
+            <div class="projects-list">
+
+                <a href="https://play.google.com/store/apps/details?id=com.robertlevonyan.testy" target="_blank" rel="noopener" class="project-card fade-up">
+                    <div class="project-card-image-wrapper">
+                        <img src="https://play-lh.googleusercontent.com/_vH_rApLLpsWl-FbdOOa6wlnyjHHBRC2hS-2j9EnpubTEc2_FznVkkeJBvvE8Mgau4yy7W7FAUDwfHvDLNB11JY=w1400" alt="Testy app screenshots" class="project-card-image pos-left" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.project-card-image-wrapper').classList.add('is-fallback')">
+                        <img src="images/portfolio/testy.png" alt="" class="project-card-icon" loading="lazy">
+                        <div class="project-card-image-overlay"></div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-title">
+                            <h2 class="project-card-title-text">Testy</h2>
+                            <h2 class="project-card-title-text project-card-title-text-absolute" aria-hidden="true">Testy</h2>
+                        </div>
+                        <div class="project-card-meta body"><span>Android app</span><span>—</span><span>(Google Play)</span></div>
+                    </div>
                 </a>
 
-            </section> <!-- end s-intro -->
-
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg"
-                            srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt=""
-                            class="about-info__pic" data-animate-el>
+                <a href="https://play.google.com/store/apps/details?id=com.robertlevonyan.electra" target="_blank" rel="noopener" class="project-card fade-up">
+                    <div class="project-card-image-wrapper">
+                        <img src="https://play-lh.googleusercontent.com/3itoruHCaPQ2NI2RmFBLv4yxGHhOKoVGjXzvXNvis0BTgIF6mZFjOAswb-JQ75c2AG36hX49sd230ADQlxK5=w1400" alt="Electra app on a tablet" class="project-card-image" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.project-card-image-wrapper').classList.add('is-fallback')">
+                        <img src="images/portfolio/electra.png" alt="" class="project-card-icon" loading="lazy">
+                        <div class="project-card-image-overlay"></div>
                     </div>
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text">
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About me
-                            </h2>
-                            <p class="attention-getter" data-animate-el>
-                                I am a Senior Android Developer with 9 years of experience,
-                                specializing in building modern, efficient Android (and multiplatform) applications.
-                                My work reflects a strong focus on clean architecture,
-                                performance optimization, and adopting the latest technologies
-                                to deliver high-quality user experiences.
-                                I am also a co-organizer of Android Manifest meetup, a speaker and
-                                a contributor and creator of some open source projects.
-                            </p>
-                            <a href="https://drive.google.com/open?id=142lXrGCILpX3a_YI8Xa8GMttNpjm3hfv&usp=drive_fs"
-                                class="btn btn--medium u-fullwidth" data-animate-el target="_blank">Download My CV</a>
-
+                    <div class="project-card-content">
+                        <div class="project-card-title">
+                            <h2 class="project-card-title-text">Electra</h2>
+                            <h2 class="project-card-title-text project-card-title-text-absolute" aria-hidden="true">Electra</h2>
                         </div>
+                        <div class="project-card-meta body"><span>Android app</span><span>—</span><span>(Google Play)</span></div>
                     </div>
-                </div> <!-- about-info -->
+                </a>
 
-
-                <!--  <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Visual Design</li>
-                            <li>Branding Identity</li>
-                            <li>UI Design</li>
-                            <li>Product Design</li>
-                            <li>Prototyping</li>
-                            <li>Illustration</li>
-                        </ul>
-
-                    </div>
-                </div> end about-expertise -->
-
-
-                <div class="row about-timelines" data-animate-block>
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Experience
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Marktguru Armenia</h3>
-                                        <h5 class="timeline__meta">Senior Android Developer</h5>
-                                        <p class="timeline__timeframe">April 2024 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Marktguru is a location-based service helping users to find offers, leaflets,
-                                        brochures, stores and opening hours in the vicinity of the user's geolocation.
-                                        Furthermore, the user has the chance to save real money on his in-store or
-                                        online purchases by using marktguru cashback deals. As a part of one of the
-                                        leading media companies worldwide the ProSiebenSat.1 Media SE marktguru is in
-                                        the position to create a large user base with the help of TV-commercials on 6
-                                        different TV-channels and a leading online platform portfolio.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Picsart</h4>
-                                    <h5 class="timeline__meta">Senior Android Developer</h5>
-                                    <p class="timeline__timeframe">October 2019 - April 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Picsart is an image and video editing, collage and drawing application and a
-                                        social network. Picsart enables users to take and edit pictures and videos, draw
-                                        with layers, and share their images with the Picsart community and on other
-                                        networks like Facebook and Instagram. The app is available on iOS, Android, Web
-                                        and Windows mobile devices.</p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">European University of Armenia</h3>
-                                        <h5 class="timeline__meta">IT Bachelor</h5>
-                                        <p class="timeline__timeframe">May 2015</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>European University (previously called European Educational Regional Academy) was
-                                        founded on the basis of agreement between the Republic of Armenia and "OWZ
-                                        Bayern" in the Federal Republic of Germany and Bavaria, "European Academy
-                                        Bolzano" in South Tyrol region of the Republic of Italy, "Career Development
-                                        Association" in the Republic of Armenia, "Chamber of Commerce and Industry of
-                                        Lyon" in France, French University of Armenia and other international and
-                                        European organizations in 15.10.2001 on decision 978 confirmed by the Government
-                                        of the Republic of Armenia.</p>
-                                </div>
-                            </div>
-
-                            <!-- <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">School of Cool Designers</h4>
-                                    <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                    <p class="timeline__timeframe">August 2012</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                        </div> end timeline -->
-
-                        </div> <!-- end column -->
-
-
-                    </div> <!-- end about-timelines -->
-
-            </section> <!-- end s-about -->
-
-
-            <!-- ### works
-            ================================================== -->
-            <section id="works" class="s-works target-section">
-
-
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Picked Works
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            Here are some of my favorite projects I have done lately. Feel free to check them out.
-                        </p>
-
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link"
-                                    href="https://play.google.com/store/apps/details?id=com.robertlevonyan.testy"
-                                    target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/testy.png"
-                                            srcset="images/portfolio/testy.png 1x, images/portfolio/testy.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            App
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Testy.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link"
-                                    href="https://play.google.com/store/apps/details?id=com.robertlevonyan.electra"
-                                    target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/electra.png"
-                                            srcset="images/portfolio/electra.png 1x, images/portfolio/electra.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            App
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Electra.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link"
-                                    href="https://play.google.com/store/apps/details?id=guru.bonbon.app"
-                                    target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/bonsy.png"
-                                            srcset="images/portfolio/bonsy.png 1x, images/portfolio/bonsy.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            App
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Bonsy.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link"
-                                    href="https://play.google.com/store/apps/dev?id=5477562049350283357"
-                                    target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/play.png"
-                                            srcset="images/portfolio/play.png 1x, images/portfolio/play.png 2x" alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Google Play Store
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            See more.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link"
-                                    href="https://github.com/robertlevonyan/no-internet-dialog-kt" target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/ghost.png"
-                                            srcset="images/portfolio/ghost.png 1x, images/portfolio/ghost.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Open Source
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            No Internet Dialog.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="https://github.com/robertlevonyan"
-                                    target="_blank">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/github.png"
-                                            srcset="images/portfolio/github.png 1x, images/portfolio/github.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Gitgub
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Check out more open source projects.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- 
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-fuji.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Retro Camera</h5>
-                                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Branding</li>
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://play.google.com/store/apps/details?id=guru.bonbon.app" target="_blank" rel="noopener" class="project-card fade-up">
+                    <div class="project-card-image-wrapper wrapper-bonsy">
+                        <div class="project-card-shots">
+                            <img src="https://play-lh.googleusercontent.com/3g_PtvaNGuir1NcXrprfoILwFooTQH59BR65SVLCk9t4gltb-F1ybPqBaKGXJ1qMUgfysHPLEgLjWGvfQHrkQ0M=w600" alt="Bonsy receipt analysis screen" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.project-card-image-wrapper').classList.add('is-fallback')">
+                            <img src="https://play-lh.googleusercontent.com/08yDmpTXk1cLOO1oVc06JI92pzIY3NWcarEa2d5_sF1eNVl2j04T3uOgrSaigYa1WM3uMLITL29yTW3MEHf_VQ=w600" alt="Bonsy receipt details screen" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.project-card-image-wrapper').classList.add('is-fallback')">
+                            <img src="https://play-lh.googleusercontent.com/n0RS9Pnr1Ox1ik6dvu9JBnyMDpoTgPAjTWnIKCGFXz92Rp6d9rgJZ1A_UJTPzzu8OC67QzSowpdesFFU_dAdNFo=w600" alt="Bonsy statistics screen" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.project-card-image-wrapper').classList.add('is-fallback')">
                         </div>
-                    </div> 
-
-                    <div id="modal-02" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>The White Lamp</h5>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Branding</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> 
-
-                    <div id="modal-03" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Rucksuck</h5>
-                                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
+                        <img src="images/portfolio/bonsy.png" alt="" class="project-card-icon" loading="lazy">
+                        <div class="project-card-image-overlay"></div>
                     </div>
-
-                    <div id="modal-04" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Since Day One</h5>
-                                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Website</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <div class="project-card-content">
+                        <div class="project-card-title">
+                            <h2 class="project-card-title-text">Bonsy</h2>
+                            <h2 class="project-card-title-text project-card-title-text-absolute" aria-hidden="true">Bonsy</h2>
                         </div>
-                    </div> 
+                        <div class="project-card-meta body"><span>Android app</span><span>—</span><span>(Google Play)</span></div>
+                    </div>
+                </a>
 
-                    <div id="modal-05" hidden>
-                        <div class="modal-popup">
-
-                            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Sand Dunes</h5>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Illustration</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://github.com/robertlevonyan/no-internet-dialog-kt" target="_blank" rel="noopener" class="project-card fade-up">
+                    <div class="project-card-image-wrapper wrapper-ghost">
+                        <img src="images/portfolio/ghost.png" alt="No Internet Dialog artwork — a ghost rising from a tombstone" class="project-card-art">
+                        <div class="project-card-image-overlay"></div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-title">
+                            <h2 class="project-card-title-text">No Internet Dialog</h2>
+                            <h2 class="project-card-title-text project-card-title-text-absolute" aria-hidden="true">No Internet Dialog</h2>
                         </div>
-                    </div> 
-
-                    <div id="modal-06" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
-                
-                            <div class="modal-popup__desc">
-                                <h5>Minimalismo</h5>
-                                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Branding</li>
-                                    <li>Product Design</li>
-                                </ul>
-                            </div>
-                
-                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> 
-        
-                </div> end works-portfolio -->
-
-                    <!--
-                <div class="row testimonials">
-                    <div class="column lg-12" data-animate-block>
-        
-                        <div class="swiper-container testimonial-slider" data-animate-el>
-        
-                            <div class="swiper-wrapper">
-
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Tim Cook</strong>
-                                            <span>CEO, Apple</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                    Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                                    Laudantium quia consequatur molestias delectus culpa.
-                                    </p>
-                                </div>
-                
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Sundar Pichai</strong>
-                                            <span>CEO, Google</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                    Quasi voluptas eius distinctio. Atque eos maxime.
-                                    </p>
-                                </div>
-                
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Satya Nadella</strong>
-                                            <span>CEO, Microsoft</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                    Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                                    Voluptatem dignissimos ut.
-                                    </p>
-                                </div>
-        
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Jeff Bezos</strong>
-                                            <span>CEO, Amazon</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
-                                    quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
-                                    Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                    </p>
-                                </div> 
-            
-                            </div>
-        
-                            <div class="swiper-pagination"></div>
-        
-                        </div> 
-        
-                    </div> 
-                </div> -->
-
-            </section> <!-- end s-works -->
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact-top">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Get In Touch
-                        </h2>
-
-                        <p class="h1">
-                            I love to hear from you.
-                            Whether you have a question or just
-                            want to chit-chat — shoot me a message.
-                        </p>
+                        <div class="project-card-meta body"><span>Open source</span><span>—</span><span>(GitHub)</span></div>
                     </div>
-                </div> <!-- end contact-top -->
+                </a>
 
-                <div class="row contact-bottom">
-                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:me@robertlevonyan.com" class="mailtoui">me@robertlevonyan.com</a> <br>
-                            <!-- <a href="tel:+1975432345">+197 543 2345</a> -->
-                        </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="secondary-list">
+                <a href="https://play.google.com/store/apps/dev?id=5477562049350283357" target="_blank" rel="noopener" class="secondary-project-card" data-preview="images/portfolio/play.png">
+                    <div class="grid">
+                        <div class="display-m secondary-title">More apps</div>
+                        <div class="project-card-meta body secondary-meta"><span>Google Play Store</span><span class="arrow">↗</span></div>
                     </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="https://github.com/robertlevonyan" target="_blank">Github</a></li>
-                            <li><a href="https://x.com/robertlevonyan" target="_blank">X</a></li>
-                            <li><a href="https://www.instagram.com/robert_levonyan/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/in/robert-levonyan-0226a462/"
-                                    target="_blank">LinkedIn</a></li>
-                        </ul>
+                </a>
+                <a href="https://github.com/robertlevonyan" target="_blank" rel="noopener" class="secondary-project-card" data-preview="images/portfolio/github.png">
+                    <div class="grid">
+                        <div class="display-m secondary-title">Open source projects</div>
+                        <div class="project-card-meta body secondary-meta"><span>GitHub</span><span class="arrow">↗</span></div>
                     </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:me@robertlevonyan.com"
-                            class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
+                </a>
+            </div>
+            <div class="hover-preview" aria-hidden="true"><img alt=""></div>
+        </div>
 
-            </section> <!-- end contact -->
+        <div class="container">
+            <div class="grid">
+                <a href="https://github.com/robertlevonyan" target="_blank" rel="noopener" class="link-l see-all">See everything on GitHub</a>
+            </div>
+        </div>
+    </section>
 
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>© Copyright Robert Levonyan 2025</span>
-                    <!-- <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">Themewagon</a></span> -->
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="grid grid-content">
+                <div class="about-side">
+                    <h2 class="display-xs">About me</h2>
+                    <figure class="about-photo fade-up">
+                        <img src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="Portrait of Robert Levonyan" loading="lazy">
+                    </figure>
                 </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-                        </svg>
-                    </a>
+                <div class="about-copy">
+                    <p class="display-xl fade-up">I build modern, efficient Android and multiplatform apps — with a focus on clean architecture, performance and the latest tech.</p>
+                    <p class="body-l fade-up">I'm a Senior Android Developer with 10+ years of experience delivering high-quality user experiences. I'm also a co-organizer of the Android Manifest meetup, a conference speaker, and the creator of and contributor to a number of open source projects.</p>
+                    <a href="https://drive.google.com/open?id=142lXrGCILpX3a_YI8Xa8GMttNpjm3hfv&amp;usp=drive_fs" target="_blank" rel="noopener" class="link-l fade-up">Download my CV</a>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </footer> <!-- end s-footer -->
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header grid">
+                <h2 class="display-xs title-col">Experience</h2>
+                <div class="list-col">
+                    <div class="xp-list">
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">marktguru</h3>
+                                <div class="xp-meta body"><span>Senior Android Developer</span><span>(2024 — Present)</span></div>
+                            </div>
+                            <p class="body xp-desc">A location-based service helping users find offers, leaflets, brochures, stores and opening hours nearby — and save real money with in-store and online cashback deals. Part of ProSiebenSat.1 Media SE, one of the leading media companies worldwide.</p>
+                        </article>
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">Picsart</h3>
+                                <div class="xp-meta body"><span>Senior Android Developer</span><span>(2019 — 2024)</span></div>
+                            </div>
+                            <p class="body xp-desc">An image and video editing, collage and drawing app and social network. Picsart lets people take and edit photos and videos, draw with layers, and share with the Picsart community — on iOS, Android, Web and Windows.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </div> <!-- end -s-pagewrap -->
+        <div class="container">
+            <div class="section-header grid">
+                <h2 class="display-xs title-col">Education</h2>
+                <div class="list-col">
+                    <div class="xp-list">
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">European University of Armenia</h3>
+                                <div class="xp-meta body"><span>IT Bachelor</span><span>(2015)</span></div>
+                            </div>
+                            <p class="body xp-desc">Founded in 2001 through an agreement between the Republic of Armenia and European partners including OWZ Bayern, the European Academy Bolzano and the Chamber of Commerce and Industry of Lyon.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="section-header grid">
+                <h2 class="display-xs title-col">Community</h2>
+                <div class="list-col">
+                    <div class="xp-list">
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">Android Manifest</h3>
+                                <div class="xp-meta body"><span>Co-organizer</span><span>(Meetup)</span></div>
+                            </div>
+                        </article>
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">Speaker &amp; writer</h3>
+                                <div class="xp-meta body"><span>Conferences, ProAndroidDev, AndroidPub</span></div>
+                            </div>
+                        </article>
+                        <article class="xp-item fade-up">
+                            <div class="xp-head">
+                                <h3 class="display-m">Open source</h3>
+                                <div class="xp-meta body"><span>Creator &amp; contributor</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!-- ===== Say hello ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="grid grid-content">
+                <div class="title-s"><h2 class="display-xs">Get in touch</h2></div>
+                <div class="about-copy">
+                    <p class="display-xl fade-up">I'd love to hear from you. Whether you have a question or just want to chit-chat — shoot me a message.</p>
+                    <a href="mailto:robertlevonyan91@gmail.com" class="link-l fade-up">Say hello</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== Footer ===== -->
+    <footer class="section section-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="grid">
+                    <div class="display-xl display-light footer-cta-label">Email</div>
+                    <a href="mailto:robertlevonyan91@gmail.com" class="display-xl display-link footer-cta-mail">robertlevonyan91@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid grid-footer">
+                <div class="footer-item">
+                    <div class="v-flex-s">
+                        <h2 class="display-m">Let's build something</h2>
+                        <p class="body-l">Android, Kotlin Multiplatform, Compose — or a talk at your meetup. I'm always up for a good conversation.</p>
+                    </div>
+                    <p class="body">© <span id="year">2026</span> Robert Levonyan</p>
+                </div>
+                <div class="footer-list footer-list-site">
+                    <div class="display-xs">Site</div>
+                    <nav class="footer-menu" aria-label="Footer">
+                        <a href="#work" class="nav-link">Work</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-list footer-list-social">
+                    <div class="display-xs">Social</div>
+                    <nav class="footer-menu" aria-label="Social">
+                        <a href="https://github.com/robertlevonyan" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/robert-levonyan-0226a462/" target="_blank" rel="noopener" class="nav-link">LinkedIn</a>
+                        <a href="https://x.com/robertlevonyan" target="_blank" rel="noopener" class="nav-link">X</a>
+                        <a href="https://www.instagram.com/robert_levonyan/" target="_blank" rel="noopener" class="nav-link">Instagram</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <svg class="footer-wordmark" viewBox="0 0 1000 120" role="img" aria-label="Robert Levonyan">
+                <text x="0" y="100" textLength="1000" lengthAdjust="spacingAndGlyphs">Robert Levonyan</text>
+            </svg>
+        </div>
+    </footer>
+
+    <div class="fixed-cta">
+        <a href="mailto:robertlevonyan91@gmail.com" class="button"><span class="dot" aria-hidden="true"></span>Say hello</a>
+    </div>
+
+    <script src="js/site.js"></script>
 </body>
-
 </html>

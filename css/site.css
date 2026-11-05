@@ -420,6 +420,10 @@ html[data-theme="light"] .theme-toggle .icon-moon { transform: none; opacity: 1;
 .project-card:hover .project-card-art { transform: translateX(-50%) scale(1.04); }
 .project-card:hover .project-card-shots { transform: translateY(-2%); }
 
+/* Theme-specific artwork */
+html[data-theme="dark"] .theme-img-light,
+html[data-theme="light"] .theme-img-dark { display: none; }
+
 /* Icon is only a fallback if a remote image fails to load */
 .project-card-image-wrapper .project-card-icon { display: none; }
 .project-card-image-wrapper.is-fallback { background: var(--tile); }
